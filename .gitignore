@@ -1,0 +1,12 @@
+# IDE
+.idea
+.vscode
+
+# Terraform specific
+.terraform.lock.hcl
+.terraform/
+
+# Temporary files
+.docs/footer.md
+
+.test
