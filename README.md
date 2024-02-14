@@ -1,9 +1,9 @@
 <!-- BEGIN_TF_DOCS -->
 ![nventive](https://nventive-public-assets.s3.amazonaws.com/nventive_logo_github.svg?v=2)
 
-# terraform-azure-linux-docker-app-service
+# terraform-azurerm-linux-docker-app-service
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![Latest Release](https://img.shields.io/github/release/nventive/terraform-azure-linux-docker-app-service.svg?style=flat-square)](https://github.com/nventive/terraform-azure-linux-docker-app-service/releases/latest)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![Latest Release](https://img.shields.io/github/release/nventive/terraform-azurerm-linux-docker-app-service.svg?style=flat-square)](https://github.com/nventive/terraform-azurerm-linux-docker-app-service/releases/latest)
 
 Terraform module to provision an Azure Linux Web App (App Service) that runs a Docker image.
 
