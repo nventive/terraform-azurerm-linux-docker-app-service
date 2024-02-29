@@ -31,6 +31,10 @@ resource "azurerm_linux_web_app" "default" {
       docker_registry_url = var.docker_registry_url
       docker_image_name   = "${var.docker_image_name}:${var.docker_image_tag}"
     }
+
+    cors {
+      allowed_origins = var.cors_allowed_origins
+    }
   }
 
   identity {
