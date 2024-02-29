@@ -26,7 +26,7 @@ so that they do not catch you by surprise.
 
 ```hcl
 module "echo_ghcr" {
-  source = "nventive/linux-docker-app-service/azure"
+  source = "nventive/linux-docker-app-service/azurerm"
   # We recommend pinning every module to a specific version
   # version = "x.x.x"
 
@@ -48,7 +48,7 @@ module "echo_ghcr" {
 
 ```hcl
 module "acr_with_role_assignment" {
-  source = "nventive/linux-docker-app-service/azure"
+  source = "nventive/linux-docker-app-service/azurerm"
   # We recommend pinning every module to a specific version
   # version = "x.x.x"
 
@@ -70,7 +70,7 @@ module "acr_with_role_assignment" {
 
 ```hcl
 module "with_custom_domain" {
-  source = "nventive/linux-docker-app-service/azure"
+  source = "nventive/linux-docker-app-service/azurerm"
   # We recommend pinning every module to a specific version
   # version = "x.x.x"
 
@@ -131,6 +131,7 @@ module "with_custom_domain" {
 | <a name="input_container_port"></a> [container\_port](#input\_container\_port) | The port number to which requests will be sent, corresponds to the port exposed by the container. | `number` | n/a | yes |
 | <a name="input_container_registry_use_managed_identity"></a> [container\_registry\_use\_managed\_identity](#input\_container\_registry\_use\_managed\_identity) | Should connections for Azure Container Registry use Managed Identity. | `bool` | `false` | no |
 | <a name="input_context"></a> [context](#input\_context) | Single object for setting entire context at once.<br>See description of individual variables for details.<br>Leave string and numeric variables as `null` to use default value.<br>Individual variable settings (non-null) override settings in context object,<br>except for attributes, tags, and additional\_tag\_map, which are merged. | `any` | <pre>{<br>  "additional_tag_map": {},<br>  "attributes": [],<br>  "delimiter": null,<br>  "descriptor_formats": {},<br>  "enabled": true,<br>  "environment": null,<br>  "id_length_limit": null,<br>  "label_key_case": null,<br>  "label_order": [],<br>  "label_value_case": null,<br>  "labels_as_tags": [<br>    "unset"<br>  ],<br>  "name": null,<br>  "namespace": null,<br>  "regex_replace_chars": null,<br>  "stage": null,<br>  "tags": {},<br>  "tenant": null<br>}</pre> | no |
+| <a name="input_cors_allowed_origins"></a> [cors\_allowed\_origins](#input\_cors\_allowed\_origins) | Specifies a list of origins that should be allowed to make cross-origin calls. | `list(string)` | `null` | no |
 | <a name="input_create_acr_role_assignment"></a> [create\_acr\_role\_assignment](#input\_create\_acr\_role\_assignment) | Should a role assignment be created so that the App Service can pull the image from the Azure Container Registry. | `bool` | `false` | no |
 | <a name="input_custom_sub_domain_name"></a> [custom\_sub\_domain\_name](#input\_custom\_sub\_domain\_name) | When creation a custom domain, the sub domain name to create. For example, for creating `myapp.contoso.com`, set the value `myapp`. | `string` | `null` | no |
 | <a name="input_delimiter"></a> [delimiter](#input\_delimiter) | Delimiter to be used between ID elements.<br>Defaults to `-` (hyphen). Set to `""` to use no delimiter at all. | `string` | `null` | no |

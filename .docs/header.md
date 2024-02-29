@@ -25,7 +25,7 @@ so that they do not catch you by surprise.
 
 ```hcl
 module "echo_ghcr" {
-  source = "nventive/linux-docker-app-service/azure"
+  source = "nventive/linux-docker-app-service/azurerm"
   # We recommend pinning every module to a specific version
   # version = "x.x.x"
 
@@ -47,7 +47,7 @@ module "echo_ghcr" {
 
 ```hcl
 module "acr_with_role_assignment" {
-  source = "nventive/linux-docker-app-service/azure"
+  source = "nventive/linux-docker-app-service/azurerm"
   # We recommend pinning every module to a specific version
   # version = "x.x.x"
 
@@ -69,7 +69,7 @@ module "acr_with_role_assignment" {
 
 ```hcl
 module "with_custom_domain" {
-  source = "nventive/linux-docker-app-service/azure"
+  source = "nventive/linux-docker-app-service/azurerm"
   # We recommend pinning every module to a specific version
   # version = "x.x.x"
 
