@@ -87,3 +87,9 @@ variable "parent_dns_zone_resource_group_name" {
   default     = null
   description = "When creating a custom domain, the name of the parent dns zone resource group."
 }
+
+variable "cors_allowed_origins" {
+  type        = list(string)
+  default     = null
+  description = "Specifies a list of origins that should be allowed to make cross-origin calls."
+}
